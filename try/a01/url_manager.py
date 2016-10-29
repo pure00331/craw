@@ -1,4 +1,8 @@
 #coding:utf-8
+import os
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'try.settings')
+import django
+django.setup()
 
 class UrlManager(object):
     def __init__(self):

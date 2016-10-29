@@ -2,7 +2,10 @@
 import re
 import urlparse
 from bs4 import BeautifulSoup
-
+import os
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'try.settings')
+import django
+django.setup()
 class UrlParser(object):
     def _get_new_urls(self, page_url, soup):
         new_urls = set()
